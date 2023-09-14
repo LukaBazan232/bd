@@ -1,0 +1,2 @@
+INSERT into city (city,country_id)
+VALUES ("Salta", (SELECT country_id FROM country WHERE country like "Argentina%")),("Cordoba", (SELECT country_id FROM country WHERE country like "Argentina%")),("Corrientes", (SELECT country_id FROM country WHERE country like "Argentina%"));
